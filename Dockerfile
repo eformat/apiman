@@ -19,6 +19,11 @@ RUN chmod +x /usr/local/apiman/wildfly-8.2.0.Final/bin/standalone.sh
 
 RUN echo "apiman-gateway.public-endpoint=https://api.cloudapps.ose.eformat.co.nz/api-gateway/" >> /usr/local/apiman/wildfly-8.2.0.Final/standalone/configuration/apiman.properties
 
+RUN echo "apiman-gateway.connector-factory.tls.allowAnyHost=true" >> /usr/local/apiman/wildfly-8.2.0.Final/standalone/configuration/apiman.properties
+
+RUN echo "apiman-gateway.connector-factory.tls.allowSelfSigned=true" >> /usr/local/apiman/wildfly-8.2.0.Final/standalone/configuration/apiman.properties
+
+
 EXPOSE 8080
 EXPOSE 8443
 
