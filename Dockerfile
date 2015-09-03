@@ -17,7 +17,7 @@ RUN unzip -o apiman-distro-wildfly8-1.1.7.Final-overlay.zip -d wildfly-8.2.0.Fin
 
 RUN chmod +x /usr/local/apiman/wildfly-8.2.0.Final/bin/standalone.sh
 
-RUN echo "apiman-gateway.public-endpoint=https://api.cloudapps.ose.eformat.co.nz:443/api-gateway/" >> /usr/local/apiman/wildfly-8.2.0.Final/standalone/configuration/apiman.properties
+#RUN echo "apiman-gateway.public-endpoint=https://api.cloudapps.ose.eformat.co.nz:443/api-gateway/" >> /usr/local/apiman/wildfly-8.2.0.Final/standalone/configuration/apiman.properties
 
 EXPOSE 8080
 EXPOSE 8443
