@@ -9,11 +9,11 @@ WORKDIR $WORK_HOME
 
 #ENV get-new-jar 11
 
-RUN curl -S -L "http://eformat.co.nz/apiman/apiman-distro-wildfly8-1.1.8.Final-overlay.zip" -o apiman-distro-wildfly8-1.1.7.Final-overlay.zip
+RUN curl -S -L "http://eformat.co.nz/apiman/apiman-distro-wildfly8-1.1.8.Final-overlay.zip" -o apiman-distro-wildfly8-1.1.8.Final-overlay.zip
 RUN curl -S -L "http://eformat.co.nz/apiman/wildfly-8.2.0.Final.zip" -o wildfly-8.2.0.Final.zip
 
 RUN unzip wildfly-8.2.0.Final.zip
-RUN unzip -o apiman-distro-wildfly8-1.1.7.Final-overlay.zip -d wildfly-8.2.0.Final
+RUN unzip -o apiman-distro-wildfly8-1.1.8.Final-overlay.zip -d wildfly-8.2.0.Final
 
 RUN chmod +x /usr/local/apiman/wildfly-8.2.0.Final/bin/standalone.sh
 
